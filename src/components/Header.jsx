@@ -1,26 +1,31 @@
-import React from "react";
+import React from 'react';
 
 export default function Header() {
     return (
-        <section className="text-gray-600 body-font">
-            <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center max-w-screen-lg">
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                    <img className="object-cover object-center rounded" alt="hero" src="https://picsum.photos/720/600" />
-                </div>
-                <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                        Bienvenidos a
+        <>
+            <section className="text-gray-600 body-font">
+                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                            Bienvenidos a Kosten
+                            <br className="hidden lg:inline-block" />
+                        </h1>
+                        <p className="mb-8 leading-relaxed">
+                            Somos Kosten, una empresa familiar con más de 30 años de experiencia dedicada a la innovación en construcción en la Patagonia. Nos especializamos en la creación de unidades habitacionales utilizando tecnologías avanzadas
+                            como contenedores y el sistema constructivo Steel Frame.
+                        </p>
+                        <p>
+                            Ofrecemos soluciones habitacionales modernas y sostenibles que cumplen con los más altos estándares de calidad y eficiencia. Nuestro compromiso con la excelencia se refleja en cada proyecto que llevamos a cabo, asegurando
+                            espacios seguros, confortables y adaptados a las necesidades de nuestros clientes.
+                        </p>
                         <br className="hidden lg:inline-block" />
-                        Kolsten construcciones
-                    </h1>
-                    <p className="mb-8 leading-relaxed">
-                        Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
-                    </p>
-                    <div className="flex justify-center">
-                        <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Más información</button>
+                        <p>Explora cómo Kosten puede transformar tu visión de vivienda en realidad. ¡Contáctanos hoy para comenzar tu próximo proyecto!</p>
+                    </div>
+                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                        <img className="object-cover object-center rounded box-shadow-xl" alt="hero" src="../../public/assets/images/headerImg.jpg" />
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 }

@@ -2,24 +2,24 @@ export default function Gallery() {
     const items = [
         {
             id: 1,
-            imgSrc: "https://picsum.photos/722/402",
-            subtitle: "Puerto Madryn",
-            title: "Portón principal",
-            description: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+            imgSrc: 'https://picsum.photos/722/402',
+            subtitle: 'Puerto Madryn',
+            title: 'Portón principal',
+            description: 'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
         },
         {
             id: 2,
-            imgSrc: "https://picsum.photos/722/402",
-            subtitle: "Trelew",
-            title: "Construcción en seco",
-            description: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+            imgSrc: 'https://picsum.photos/722/402',
+            subtitle: 'Trelew',
+            title: 'Construcción en seco',
+            description: 'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
         },
         {
             id: 3,
-            imgSrc: "https://picsum.photos/722/402",
-            subtitle: "Playa Unión",
-            title: "Techo de estructura",
-            description: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+            imgSrc: 'https://picsum.photos/722/402',
+            subtitle: 'Playa Unión',
+            title: 'Techo de estructura',
+            description: 'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
         },
     ];
     return (
