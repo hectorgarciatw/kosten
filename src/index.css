@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer {
+    position: static; /* Cambiado de fixed a static */
+    color: #fff;
+    padding: 10px 20px;
+}

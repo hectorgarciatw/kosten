@@ -1,40 +1,67 @@
-import "boxicons"; // Importa Boxicons
+import React, { useState } from 'react';
+import 'boxicons/css/boxicons.min.css';
 
-export default function Navbar() {
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
-        <nav className="bg-white shadow dark:bg-gray-800">
-            <div className="container flex items-center justify-between p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-                {/* Enlaces de navegación */}
-                <div className="flex items-center space-x-6">
-                    <a href="#" className="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-blue-500">
+        <nav className="bg-gray-900 text-white">
+            <div className="container mx-auto flex justify-between items-center py-4 px-6">
+                <a className="text-3xl font-bold font-heading">Kolsten</a>
+                <div className="hidden md:flex space-x-6">
+                    <a className="hover:text-gray-200" href="#inicio">
+                        Inicio
+                    </a>
+                    <a className="hover:text-gray-200" href="#acerca">
                         Acerca
                     </a>
-
-                    <a href="#" className="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500">
+                    <a className="hover:text-gray-200" href="#trabajos">
                         Trabajos
                     </a>
-
-                    <a href="#" className="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500">
+                    <a className="hover:text-gray-200" href="#contacto">
                         Contacto
                     </a>
                 </div>
-
-                {/* Iconos de redes sociales */}
-                <div className="flex items-center space-x-4">
-                    <a href="#" className="text-white hover:text-blue-500">
-                        <i className="bx bxl-instagram bx-xs bx-tada-hover"></i>
+                <div className="flex space-x-4">
+                    <a href="https://www.instagram.com/kosten_construcciones/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
+                        <i className="bx bxl-instagram text-2xl bx-tada-hover"></i>
                     </a>
-                    <a href="#" className="text-white hover:text-blue-500">
-                        <i className="bx bx-envelope bx-xs bx-tada-hover"></i>
+                    <a href="mailto:kostenconstrucciones@gmail.com" className="hover:text-gray-200">
+                        <i className="bx bxl-gmail text-2xl bx-tada-hover"></i>
                     </a>
-                    <a href="#" className="text-white hover:text-blue-500">
-                        <i className="bx bxl-whatsapp bx-xs bx-tada-hover"></i>
+                    <a href="https://wa.me/54924791102" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
+                        <i className="bx bxl-whatsapp text-2xl bx-tada-hover"></i>
                     </a>
-                    <a href="#" className="text-white hover:text-blue-500">
-                        <i className="bx bxl-facebook bx-xs bx-tada-hover"></i>
+                    <a href="https://www.facebook.com/people/Kosten-Construcciones/61562339275563/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
+                        <i className="bx bxl-facebook text-2xl bx-tada-hover"></i>
                     </a>
                 </div>
+                <button onClick={toggleMenu} className="md:hidden flex items-center">
+                    <i className="bx bx-menu text-3xl"></i>
+                </button>
             </div>
+            {isOpen && (
+                <div className="md:hidden">
+                    <a className="block px-4 py-2 hover:text-gray-200" href="#inicio">
+                        Inicio
+                    </a>
+                    <a className="block px-4 py-2 hover:text-gray-200" href="#acerca">
+                        Acerca
+                    </a>
+                    <a className="block px-4 py-2 hover:text-gray-200" href="#trabajos">
+                        Trabajos
+                    </a>
+                    <a className="block px-4 py-2 hover:text-gray-200" href="#contacto">
+                        Contacto
+                    </a>
+                </div>
+            )}
         </nav>
     );
-}
+};
+
+export default Navbar;
