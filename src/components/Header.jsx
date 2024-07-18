@@ -22,7 +22,7 @@ export default function Header() {
                         <p>Explora cómo Kosten puede transformar tu visión de vivienda en realidad. ¡Contáctanos hoy para comenzar tu próximo proyecto!</p>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img className="object-cover object-center rounded box-shadow-xl" alt="hero" src="../../public/assets/images/headerImg.jpg" />
+                        <img className="object-cover object-center rounded box-shadow-xl" alt="hero" src="/assets/images/headerImg.jpg" />
                     </div>
                 </div>
             </section>

@@ -4,14 +4,14 @@ export default function About() {
             <div className="container px-5 py-24 mx-auto flex flex-col">
                 <div className="lg:w-4/6 mx-auto">
                     <div className="relative rounded-lg h-64 overflow-hidden">
-                        <img alt="content" className="object-cover object-center h-full w-full shadow-lg" src="../../public/assets/images/headerImg.jpg" />
-                        <img alt="logo" className="absolute -top-3 -left-3 m-4 h-12 w-25" src="../../public/assets/images/logo.png" />
+                        <img alt="content" className="object-cover object-center h-full w-full shadow-lg" src="/assets/images/headerImg.jpg" />
+                        <img alt="logo" className="absolute -top-3 -left-3 m-4 h-12 w-25" src="/assets/images/logo.png" />
                     </div>
 
                     <div className="flex flex-col sm:flex-row mt-10">
                         <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                             <div className="w-20 h-20 rounded-full inline-flex items-center justify-center  text-gray-400">
-                                <img alt="profile" src="../../public/assets/images/avatarKosten.png" className="w-16 h-16 rounded-full" />
+                                <img alt="profile" src="/assets/images/avatarKosten.png" className="w-16 h-16 rounded-full" />
                             </div>
                             <div className="flex flex-col items-center text-center justify-center">
                                 <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Guillermo M. García</h2>
