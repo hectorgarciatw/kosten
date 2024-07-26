@@ -1,3 +1,6 @@
+import React from 'react';
+import WhatsAppButton from './WhatsAppButton';
+
 export default function About() {
     return (
         <section id="acerca" className="text-gray-600 body-font">
@@ -10,7 +13,7 @@ export default function About() {
 
                     <div className="flex flex-col sm:flex-row mt-10">
                         <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                            <div className="w-20 h-20 rounded-full inline-flex items-center justify-center  text-gray-400">
+                            <div className="w-20 h-20 rounded-full inline-flex items-center justify-center text-gray-400">
                                 <img alt="profile" src="/assets/images/avatarKosten.png" className="w-16 h-16 rounded-full" />
                             </div>
                             <div className="flex flex-col items-center text-center justify-center">
@@ -18,6 +21,10 @@ export default function About() {
                                 <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
                                 <p className="text-base italic">“Explora cómo Kosten puede transformar tu visión de vivienda en realidad. ¡Contáctanos hoy para comenzar tu próximo proyecto!”</p>
                             </div>
+                            <WhatsAppButton
+                                phoneNumber="542944791102" // Reemplaza con tu número de WhatsApp
+                                message="¡Hola! Me gustaría obtener más información sobre sus servicios."
+                            />
                         </div>
                         <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Bienvenidos a Kosten</h1>
@@ -25,7 +32,7 @@ export default function About() {
                                 Somos Kosten, una empresa familiar con más de 30 años de experiencia dedicada a la innovación en construcción en la Patagonia. Nos especializamos en la creación de unidades habitacionales utilizando tecnologías
                                 avanzadas como contenedores y el sistema constructivo Steel Frame.
                             </p>
-                            <p mb-8 leading-relaxed>
+                            <p className="mb-8 leading-relaxed">
                                 Ofrecemos soluciones habitacionales modernas y sostenibles que cumplen con los más altos estándares de calidad y eficiencia. Nuestro compromiso con la excelencia se refleja en cada proyecto que llevamos a cabo,
                                 asegurando espacios seguros, confortables y adaptados a las necesidades de nuestros clientes.
                             </p>
