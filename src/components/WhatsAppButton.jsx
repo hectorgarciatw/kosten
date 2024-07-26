@@ -8,7 +8,7 @@ const WhatsAppButton = ({ phoneNumber, message }) => {
     return (
         <div className="whatsapp-button-container">
             <a href={`https://wa.me/${phoneNumber}?text=${encodedMessage}`} target="_blank" rel="noopener noreferrer" className="whatsapp-button">
-                <img src="/public/assets/images/wsp.png" alt="WhatsApp" />
+                <img src="/assets/images/wsp.png" alt="WhatsApp" />
                 Consultas por Wsp
             </a>
         </div>

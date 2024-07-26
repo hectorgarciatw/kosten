@@ -82,15 +82,12 @@ export default function Gallery() {
     return (
         <section id="trabajos" className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto max-w-screen-lg">
-                <div className="flex flex-wrap w-full mb-20">
+                <div className="flex flex-col items-center w-full mb-20 text-center">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                        <div className="flex flex-col items-start">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Últimos trabajos realizados</h1>
-                            <div className="h-1 bg-indigo-500 rounded w-full"></div>
-                        </div>
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Últimos trabajos realizados</h1>
+                        <div className="h-1 bg-indigo-500 rounded w-full"></div>
                     </div>
-
-                    <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+                    <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 mt-4">
                         En Kosten, combinamos más de 30 años de experiencia con innovadoras técnicas de construcción, como el uso de contenedores y el sistema Steel Frame. Explora cómo transformamos ideas en realidades habitacionales únicas y
                         avanzadas.
                     </p>
