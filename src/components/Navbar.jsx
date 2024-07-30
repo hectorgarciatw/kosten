@@ -11,10 +11,8 @@ const Navbar = () => {
     return (
         <nav className="bg-gray-900 text-white">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-6">
-                <div className="flex flex-col items-center md:items-start">
-                    <a className="text-3xl font-bold font-heading transform transition-transform duration-300 hover:scale-110">Kolsten</a>
-                    <span className="text-sm mt-1 text-white">Viviendas que fusionan innovación y estilo</span>
-                </div>
+                <a className="text-3xl font-bold font-heading transform transition-transform duration-300 hover:scale-110">Kolsten</a>
+
                 <div className="hidden md:flex space-x-6">
                     <a
                         className="relative hover:text-gray-300 transition-colors duration-300 
