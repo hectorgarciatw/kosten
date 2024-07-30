@@ -43,32 +43,12 @@ export default function Gallery() {
         {
             id: 6,
             imgSrc: '/assets/images/trabajos/trabajo6.jpg',
-            subtitle: 'Playa Unión',
-            title: 'Techo de estructura',
-            description: 'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
-        },
-        {
-            id: 7,
-            imgSrc: '/assets/images/trabajos/trabajo3.jpg',
-            subtitle: 'Playa Unión',
-            title: 'Techo de estructura',
-            description: 'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
-        },
-        {
-            id: 8,
-            imgSrc: '/assets/images/trabajos/trabajo4.jpg',
-            subtitle: 'Puerto Madryn',
-            title: 'Portón principal',
-            description: 'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
-        },
-        {
-            id: 9,
-            imgSrc: '/assets/images/trabajos/trabajo9.jpg',
-            subtitle: 'Playa Unión',
-            title: 'Techo de estructura',
-            description: 'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+            subtitle: 'Playa Unión - Chubut',
+            title: 'Interiores',
+            description: 'Espacio Interior de contenedor de 12 metros, piso flotante de PVC y salamandra a leña.',
         },
     ];
+
     const openModal = (imgSrc) => {
         setCurrentImage(imgSrc);
         setIsModalOpen(true);
@@ -81,7 +61,7 @@ export default function Gallery() {
 
     return (
         <section id="trabajos" className="text-gray-600 body-font">
-            <div className="container px-5  mx-auto max-w-screen-lg">
+            <div className="container px-5 py-24 mx-auto max-w-screen-lg">
                 <div className="flex flex-col items-center w-full mb-20 text-center">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-1 text-gray-900">Últimos trabajos realizados</h1>
