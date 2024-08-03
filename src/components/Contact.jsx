@@ -28,7 +28,7 @@ export default function Contact() {
                         <div className="lg:w-1/2 px-4 mt-4 lg:mt-0">
                             <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
                             <a href="mailto:kostenconstrucciones@email.com" className="text-indigo-500 leading-relaxed">
-                                kostenconstrucciones@email.com
+                                kostenconstrucciones@gmail.com
                             </a>
                             <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">TELÉFONO</h2>
                             <p className="leading-relaxed">2944791102</p>
