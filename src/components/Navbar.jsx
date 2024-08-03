@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import 'boxicons/css/boxicons.min.css';
+import React, { useState } from "react";
+import "boxicons/css/boxicons.min.css";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <nav className="bg-gray-900 text-white">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-6">
-                <a className="text-3xl font-bold font-heading transform transition-transform duration-300 hover:scale-110">Kolsten</a>
+                <a className="text-3xl font-bold font-heading transform transition-transform duration-300 hover:scale-110">Kosten</a>
 
                 <div className="hidden md:flex space-x-6">
                     <a

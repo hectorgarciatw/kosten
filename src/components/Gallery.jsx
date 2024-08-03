@@ -1,51 +1,51 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function Gallery() {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [currentImage, setCurrentImage] = useState('');
+    const [currentImage, setCurrentImage] = useState("");
 
     const items = [
         {
             id: 1,
-            imgSrc: '/assets/images/trabajos/trabajo1.jpg',
-            subtitle: 'Playa Unión - Chubut',
-            title: 'Contenedor',
-            description: 'Casa realizada con  3 contenedores de 12 metros (baño-cocina y living), frente con aberturas de aluminio.',
+            imgSrc: "/assets/images/trabajos/trabajo1.jpg",
+            subtitle: "Playa Unión - Chubut",
+            title: "Contenedor",
+            description: "Casa realizada con  3 contenedores de 12 metros (baño-cocina y living), frente con aberturas de aluminio.",
         },
         {
             id: 2,
-            imgSrc: '/assets/images/trabajos/trabajo2.jpg',
-            subtitle: 'Rawson - Chubut',
-            title: 'Quincho',
-            description: 'Quincho de 60 metros 2 con sistema constructivo Steel Frame, revestido en Siding con abertura de aluminio.',
+            imgSrc: "/assets/images/trabajos/trabajo2.jpg",
+            subtitle: "Rawson - Chubut",
+            title: "Quincho",
+            description: "Quincho de 60 metros 2 con sistema constructivo Steel Frame, revestido en Siding con abertura de aluminio.",
         },
         {
             id: 3,
-            imgSrc: '/assets/images/trabajos/trabajo7.jpg',
-            subtitle: 'Puerto Madryn - Chubut',
-            title: 'Monoambiente',
-            description: 'Monoambiente: Listo para habitar (instalaciones de agua,electricidad y sanitarios).',
+            imgSrc: "/assets/images/trabajos/trabajo7.jpg",
+            subtitle: "Puerto Madryn - Chubut",
+            title: "Monoambiente",
+            description: "Monoambiente: Listo para habitar (instalaciones de agua,electricidad y sanitarios).",
         },
         {
             id: 4,
-            imgSrc: '/assets/images/trabajos/trabajo8.jpg',
-            subtitle: 'Trelew - Chubut',
-            title: 'Quincho',
-            description: 'Interior de Quincho de 70 metros, con sistema constructivo en steel Frame y techo metalúrgico con cabreadas a la vista.',
+            imgSrc: "/assets/images/trabajos/trabajo8.jpg",
+            subtitle: "Trelew - Chubut",
+            title: "Quincho",
+            description: "Interior de Quincho de 70 metros, con sistema constructivo en steel Frame y techo metalúrgico con cabreadas a la vista.",
         },
         {
             id: 5,
-            imgSrc: '/assets/images/trabajos/trabajo5.jpg',
-            subtitle: 'Trelew',
-            title: 'Construcción en seco',
-            description: 'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+            imgSrc: "/assets/images/trabajos/trabajo5.jpg",
+            subtitle: "Playa Unión - Chubut",
+            title: "Cocina",
+            description: "Cocina de quincho contenedor en interiores.",
         },
         {
             id: 6,
-            imgSrc: '/assets/images/trabajos/trabajo6.jpg',
-            subtitle: 'Playa Unión - Chubut',
-            title: 'Interiores',
-            description: 'Espacio Interior de contenedor de 12 metros, piso flotante de PVC y salamandra a leña.',
+            imgSrc: "/assets/images/trabajos/trabajo6.jpg",
+            subtitle: "Playa Unión - Chubut",
+            title: "Interiores",
+            description: "Espacio Interior de contenedor de 12 metros, piso flotante de PVC y salamandra a leña.",
         },
     ];
 
@@ -56,7 +56,7 @@ export default function Gallery() {
 
     const closeModal = () => {
         setIsModalOpen(false);
-        setCurrentImage('');
+        setCurrentImage("");
     };
 
     return (
